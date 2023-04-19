@@ -7,6 +7,7 @@ import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -22,7 +23,17 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="z-10 mt-32 md:basis-3/5">
           {/* headings */}
           {/* move content up on page for medium size screen */}
-          <div className="md:-mt-20">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="md:-mt-20"
+          >
             {/* set parent to relative and image to absolute position with before: properties */}
             <div className="relative">
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext">
@@ -33,7 +44,7 @@ const Home = ({ setSelectedPage }: Props) => {
               State of the art equipment and custom fitness training. Get the
               body you didn't think was possible. Evolve with us.
             </p>
-          </div>
+          </motion.div>
           {/* actions */}
           <div className="mt-8 flex items-center gap-8">
             <ActionButton setSelectedPage={setSelectedPage}>
