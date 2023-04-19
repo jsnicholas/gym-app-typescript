@@ -6,10 +6,10 @@ This React app was built as an example template page for an imagined gym. The cl
 
 ## Screenshots
 
-<img src="../gym-app-typescript/src/assets/screenshots/gym_desktop.png" width="700">
+<img src="./src/assets/screenshots/gym_desktop.png" width="700">
 
-<img src="../gym-app-typescript/src/assets/screenshots/gym_mobile.png" width="500">
-<img src="../gym-app-typescript/src/assets/screenshots/gym_mobilemenu.png" width="500">
+<img src="./src/assets/screenshots/gym_mobile.png" width="500">
+<img src="./src/assets/screenshots/gym_mobilemenu.png" width="500">
 
 ## Installation
 
