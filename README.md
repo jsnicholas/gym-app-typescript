@@ -22,3 +22,7 @@ This page can be run with `npm run dev` you can also create your own build with 
 ## Credits
 
 Design by @EdRoh. Created as part of his Typescript for beginners class.
+
+## Live Demo
+
+https://gym-app-typescript-sage.vercel.app/
